@@ -159,7 +159,7 @@ Go to the <Features> Section of overview and add
  
     <vmport state='off'/>
  
-    <ioapic driver='kvm'/>`
+    <ioapic driver='kvm'/>
 
   ## Modify topology
  
