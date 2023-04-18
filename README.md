@@ -133,7 +133,8 @@ Go to the XML tab in your overview, and remove these lines
 ## Modify XML further
 Go to the <Features> Section of overview and add
 
-  `<features>
+``` 
+  <features>
     <acpi/>
     <apic/>
     <hyperv>
@@ -143,10 +144,11 @@ Go to the <Features> Section of overview and add
       <vendor_id state='on' value='123456789123'/>
     </hyperv>
     <kvm>
-      <hidden state='on'/>  
+      <hidden state='on'/>
     </kvm>
     <vmport state='off'/>
-    <ioapic driver='kvm'/>`
+    <ioapic driver='kvm'/>
+    ```
 
   ## Modify topology
  
