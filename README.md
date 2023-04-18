@@ -109,6 +109,7 @@ Remove TPM
 
 ## Remove stubborn devices
 chances are, you won't be able to remove VideoQXL or Display Spice
+
 Go to the XML tab in your overview, and remove these lines
 
   
