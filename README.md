@@ -48,6 +48,8 @@ Create a new virtual machine, give it whatever name, whatever storage, tick the 
 
 select your UEFI firmware to be `/usr/share/edk2-ovmf/x64/OVMF_CODE.fd`
 
+Inside of boot options, tick the box that says `enable boot menu`
+
 Begin the windows install. After you make it to the desktop, shutdown.
 
 ## Grab and customize ROM
@@ -68,4 +70,29 @@ After you find VIDEO, move behind it until you find the first U. remove everythi
 `sudo chmod -R 644 [NameOfRom].ROM`
 
 `sudo chown yourusername:yourusername [NameOfRom].ROM`
+
+## Install Hooks
+
+This is an amazing script by RisingPrism
+
+`git clone https://github.com/Drevoes/Single-GPU-Passthrough-KVM/`
+
+`cd Single-GPU-Passthrough-KVM/`
+
+`sudo chmod +x install_hooks.sh`
+
+`sudo ./install_hooks.sh`
+
+Your going to have to edit hooks now. `sudo nano /etc/libvirt/hooks/qemu`
+
+on the If then line, at the end of [[ add `|| [[ $OBJECT == "YourVMName" ]]`
+
+## Pass your GPU through
+Press `add hardware` and inside of `PCI Host Device` pass all of your GPU related devices, most likely anything with `NVIDIA CORPORATION` at the start.
+
+Pass through your USB device aswell.
+
+## Remove Devices
+
+
 
