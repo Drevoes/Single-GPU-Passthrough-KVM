@@ -60,7 +60,12 @@ After you find VIDEO, move behind it until you find the first U. remove everythi
 ## Place the ROM.
 
 `sudo mkdir /usr/share/vgabios`
+
 `cp [PathToROm] /usr/share/vgabios/
+
 cd /usr/share/vgabios
+
 sudo chmod -R 644 [NameOfRom].ROM
+
 sudo chown yourusername:yourusername [NameOfRom].ROM`
+
