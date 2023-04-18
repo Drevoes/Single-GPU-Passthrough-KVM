@@ -161,6 +161,25 @@ Go to the <Features> Section of overview and add
  
     `<ioapic driver='kvm'/>`
 
-  
+  ## Modify topology
+ 
+ go to CPU tab
+ 
+ Tick manually set CPU topology
+ 
+ set sockets to 1, cores to your cpu cores, threads to 1 if HP is OFF and 2 if HP is ON
+ 
+ scroll down to <topology
+                          
+ add ` <feature policy='disable' name='smep'/>` underneath `<topology sockets='' dies='' cores='' threads=''/>`
+ 
+ ## Finish
+ Run your Virtual Machine.
+                          
+                          
+                          
+                          
+                       
+ 
 
 
