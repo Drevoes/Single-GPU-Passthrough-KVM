@@ -50,3 +50,17 @@ select your UEFI firmware to be `/usr/share/edk2-ovmf/x64/OVMF_CODE.fd`
 
 Begin the windows install. After you make it to the desktop, shutdown.
 
+## Grab and customize ROM
+Install hirens boot CD, and dump your rom using gpu-z.
+
+Drag the .ROM into Hexed.it, search for VIDEO.
+
+After you find VIDEO, move behind it until you find the first U. remove everything BEHIND the U.
+
+## Place the ROM.
+
+`sudo mkdir /usr/share/vgabios`
+`cp [PathToROm] /usr/share/vgabios/
+cd /usr/share/vgabios
+sudo chmod -R 644 [NameOfRom].ROM
+sudo chown yourusername:yourusername [NameOfRom].ROM`
