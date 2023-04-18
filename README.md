@@ -133,33 +133,33 @@ Go to the XML tab in your overview, and remove these lines
 ## Modify XML further
 Go to the <Features> Section of overview and add
 
-  `<features>`
+  `<features>
  
-    `<acpi/>`
+    <acpi/>
  
-    `<apic/>`
+    <apic/>
  
-    `<hyperv>`
+    <hyperv>
  
-      `<relaxed state='on'/>`
+      <relaxed state='on'/>
  
-      `<vapic state='on'/>`
+      <vapic state='on'/>
  
-      `<spinlocks state='on' retries='8191'/>`
+      <spinlocks state='on' retries='8191'/>
  
-      `<vendor_id state='on' value='123456789123'/>`
+      <vendor_id state='on' value='123456789123'/>
  
-    `</hyperv>`
+    </hyperv>
  
-    `<kvm>`
+    <kvm>
  
-      `<hidden state='on'/>`    
+      <hidden state='on'/>  
  
-    `</kvm>`
+    </kvm>
  
-    `<vmport state='off'/>`
+    <vmport state='off'/>
  
-    `<ioapic driver='kvm'/>`
+    <ioapic driver='kvm'/>`
 
   ## Modify topology
  
