@@ -39,3 +39,7 @@ uncomment `user = "root"` and `group = "root"` and replace them with your userna
 
 restart the libvirt daemon `sudo systemctl restart libvirtd`
 
+If you plan on using virtual network, to save time, run `sudo virsh net-autostart default` to have the virtual network service start on startup.
+
+If you don't want to do this, run `sudo virsh net-start default` everytime you start a VM.
+
