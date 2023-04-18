@@ -134,6 +134,7 @@ Go to the XML tab in your overview, and remove these lines
 Go to the <Features> Section of overview and add
 
 ``` 
+</os>
   <features>
     <acpi/>
     <apic/>
@@ -148,7 +149,12 @@ Go to the <Features> Section of overview and add
     </kvm>
     <vmport state='off'/>
     <ioapic driver='kvm'/>
-    ```
+    
+    
+   https://user-images.githubusercontent.com/85000101/211212814-bdb969fc-1a5c-4fe3-aecd-c6fdfb7aa34a.png
+ 
+    
+```
 
   ## Modify topology
  
