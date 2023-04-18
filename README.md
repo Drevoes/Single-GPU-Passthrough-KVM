@@ -92,7 +92,25 @@ Press `add hardware` and inside of `PCI Host Device` pass all of your GPU relate
 
 Pass through your USB device aswell.
 
-## Remove Devices
+Go to the XML tab of all your GPU devices and add `<rom file='/usr/share/vgabios/[nameofrom].rom'/>`  between the second source and address
 
+## Remove Devices
+Remove both USB directors
+
+Sound ich9
+
+Tablet
+
+Serial 1
+
+Channel spice
+
+Remove TPM
+
+## Remove stubborn devices
+chances are, you won't be able to remove VideoQXL or Display Spice
+Go to the XML tab in your overview, and remove these lines
+
+  
 
 
