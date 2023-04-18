@@ -43,3 +43,10 @@ If you plan on using virtual network, to save time, run `sudo virsh net-autostar
 
 If you don't want to do this, run `sudo virsh net-start default` everytime you start a VM.
 
+## Configure Virtual Machine
+Create a new virtual machine, give it whatever name, whatever storage, tick the box that says `Customize configuration before install`
+
+select your UEFI firmware to be `/usr/share/edk2-ovmf/x64/OVMF_CODE.fd`
+
+Begin the windows install. After you make it to the desktop, shutdown.
+
